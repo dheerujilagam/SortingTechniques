@@ -96,3 +96,17 @@ Selection Sort has a space complexity of O(1), which is constant space. The algo
 
 # Stability 
 Selection Sort is not stable by default. Stability in sorting means that the relative order of equal elements remains unchanged after sorting. In Selection Sort, during the swapping step, there's no guarantee that elements with the same value will maintain their original order. For example, if you have two equal elements, one before the other, and both need to be swapped to their correct positions, their relative order might change.
+
+# Summary
+
+Time Complexity
+
+	Worst-case: O(n^2)
+	
+	Average-case: O(n^2)
+	
+	Best-case: O(n)
+
+Space Complexity: O(1)
+
+Stability: Stable
