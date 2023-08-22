@@ -117,3 +117,20 @@ int main() {
 ```
 1 2 3 6 13 15 19
 ```
+
+# Time Complexity:
+Bubble Sort has a worst-case and average-case time complexity of O(n^2), where "n" is the number of elements in the array. This is because, in the worst case, the algorithm needs to perform n-1 comparisons for the first pass, n-2 comparisons for the second pass, and so on, until the last two elements are compared. The total number of comparisons is roughly (n-1) + (n-2) + ... + 1, which is approximately (n^2)/2. The best-case time complexity of Bubble Sort is O(n) when the array is already sorted. However, even in the best-case scenario, the algorithm will still perform n-1 passes, leading to an average-case time complexity of O(n^2) due to the number of comparisons and swaps.
+
+# Space Complexity:
+Bubble Sort is an in-place sorting algorithm, meaning it doesn't require additional memory space proportional to the input size. The space complexity of Bubble Sort is O(1), as it only requires a constant amount of extra space to store temporary variables used in the swapping process.
+
+# Stability:
+Bubble Sort is a stable sorting algorithm. Stability in sorting means that the relative order of equal elements remains unchanged after sorting. In Bubble Sort, whenever two adjacent elements are swapped, they change their positions. However, if two elements are equal and they are adjacent, the swapping will not occur. This ensures that the relative order of equal elements is preserved in the sorted array.
+
+# In summary:
+
+Time Complexity: O(n^2) (worst-case and average-case), O(n) (best-case)
+
+Space Complexity: O(1)
+
+Stability: Stable
