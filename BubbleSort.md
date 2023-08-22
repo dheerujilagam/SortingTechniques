@@ -2,6 +2,16 @@
 
 Bubble Sort is a simple sorting algorithm that repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order. The process is repeated for each element until the entire list is sorted.
 
+# Algorithm
+
+1. Start at the beginning of the array.
+2. Compare the current element with the next element.
+3. If the current element is greater (or smaller, depending on whether you're implementing ascending or descending order) than the next element, swap them.
+4. Move to the next pair of elements and repeat step 2.
+5. Continue these steps for each pair of adjacent elements in the array.
+6. After each pass through the array, the largest (or smallest) unsorted element "bubbles up" to the end of the array.
+7. Repeat the process for a total of n-1 passes, where n is the number of elements in the array.
+
 Let's say we have an unsorted array: [5, 3, 8, 1, 2]
 
 Pass 1:
@@ -118,16 +128,16 @@ int main() {
 1 2 3 6 13 15 19
 ```
 
-# Time Complexity:
+# Time Complexity
 Bubble Sort has a worst-case and average-case time complexity of O(n^2), where "n" is the number of elements in the array. This is because, in the worst case, the algorithm needs to perform n-1 comparisons for the first pass, n-2 comparisons for the second pass, and so on, until the last two elements are compared. The total number of comparisons is roughly (n-1) + (n-2) + ... + 1, which is approximately (n^2)/2. The best-case time complexity of Bubble Sort is O(n) when the array is already sorted. However, even in the best-case scenario, the algorithm will still perform n-1 passes, leading to an average-case time complexity of O(n^2) due to the number of comparisons and swaps.
 
-# Space Complexity:
+# Space Complexity
 Bubble Sort is an in-place sorting algorithm, meaning it doesn't require additional memory space proportional to the input size. The space complexity of Bubble Sort is O(1), as it only requires a constant amount of extra space to store temporary variables used in the swapping process.
 
-# Stability:
+# Stability
 Bubble Sort is a stable sorting algorithm. Stability in sorting means that the relative order of equal elements remains unchanged after sorting. In Bubble Sort, whenever two adjacent elements are swapped, they change their positions. However, if two elements are equal and they are adjacent, the swapping will not occur. This ensures that the relative order of equal elements is preserved in the sorted array.
 
-# In summary:
+# Summary
 
 Time Complexity: O(n^2) (worst-case and average-case), O(n) (best-case)
 
